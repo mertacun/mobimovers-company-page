@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    <link rel="stylesheet" href="main.css" />
+    <title>MobiMovers - Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/MOBIMOVERS.png" id="logo" alt="MobiMovers logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="srch_wrpr">
+            <input type="checkbox" name="" class="checkbox">
+            <div class="srch_sb_cnt">
+                <input type="text" name="text_bar" id="" class="sech_txt_inpt" placeholder="Type to search...">
+                <button class="srch_btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero-contact">
+        <div id="hero-overlay"></div>
+        <h1>CONTACT US</h1>
+    </section>
+
+    <section id="contact">
+        <section id="contact-us">
+            <div class="contact-info-section">
+                <div class="contact-group">
+                    <div class="contact-info">
+                        <h2><i class="fas fa-phone"></i> CALL US</h2>
+                        <p>+1 (613) 456-7890</p>
+                        <p>+1 (800) 948-1356</p>
+                    </div>
+                    <div class="contact-info">
+                        <h2><i class="fas fa-envelope"></i> EMAIL US</h2>
+                        <p><a href="mailto:contact@mobimovers.ca">contact@mobimovers.ca</a></p>
+                    </div>
+                </div>
+                <div class="contact-group">
+                    <div class="contact-info">
+                        <h2><i class="fas fa-map-marker-alt"></i> HEAD OFFICE</h2>
+                        <p>123 Main St</p>
+                        <p>Ottawa, ON K1Z 5G7</p>
+                    </div>
+                    <div class="contact-info">
+                        <h2><i class="fas fa-clock"></i> HOURS</h2>
+                        <p>9:00AM to 5:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-section">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0234462708986!2d-75.75965292464147!3d45.3483389710723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc2b9a43%3A0xaab77916ff2ca12!2sAlgonquin%20College%20%2F%20College!5e0!3m2!1str!2sca!4v1698758416256!5m2!1str!2sca" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <div class="get-quote-section">
+            <div class="get-quote">
+                <p>Ready to move? <a href="#QuoteForm">Get a quote</a> now!</p>
+            </div>
+            <div id="QuoteForm" class="quote-form">
+                <h3>Get a Quote</h3>
+                <form action="" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Your Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+
+                    <label for="move-type">Type of Move:</label>
+                    <select id="move-type" name="move-type">
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="packing">Packing Services</option>
+                        <option value="furniture-assembly">Furniture Assembly</option>
+                        <option value="storage">Storage Solutions</option>
+                        <option value="international-move">International Move</option>
+                        <option value="pet-friendly-move">Pet-Friendly Move</option>
+                    </select>
+
+                    <label for="move-date">Preferred Move Date:</label>
+                    <input type="date" id="move-date" name="move-date" required>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="6"></textarea>
+
+                    <input type="submit" value="Request Quote">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h3>Legal Information</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 MobiMovers. All Rights Reserved.</p>
+                <p>Contact us at <a href="mailto:contact@mobimovers.ca">contact@mobimovers.ca</a></p>
+                <p>Address: 123 Main St, Ottawa, ON</p>
+                <p>Phone: +1 (613) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
