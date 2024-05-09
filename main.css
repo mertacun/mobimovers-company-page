@@ -1,0 +1,667 @@
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background-color: #2D2C2A;
+  color: #fa9f15;
+}
+
+header {
+  background-color: #2D2C2A;
+  color: #fa9f15;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fa9f15;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #fa9f15;
+  color: #2D2C2A;
+}
+
+#logo {
+  max-height: 330px;
+  margin: -150px 0 -130px 0;
+}
+
+#hero {
+  background-image: url('images/movingtruck.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 185px 0;
+}
+
+#hero-overlay {
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  color: white;
+}
+
+#get-quote-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fa9f15;
+  border: 2px solid #fa9f15;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#get-quote-link:hover {
+  background-color: #fa9f15;
+  color: #2D2C2A;
+}
+
+#slogan {
+  background-color: #2D2C2A;
+  color: #fa9f15;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 45px;
+}
+
+.service {
+  background-color: #5a5959;
+  color: white;
+  flex: 0 0 calc(25% - 20px);
+  margin: 10px;
+  padding: 40px;
+  border: 2px solid #fa9f15;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.service h3 {
+  margin: 0;
+}
+
+.service p {
+  margin: 10px 0;
+}
+
+.learn-more-link {
+  margin-top: auto;
+}
+
+.learn-more-link a {
+  color: #fa9f15;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more-link a:hover {
+  background-color: #fa9f15;
+  color: #2D2C2A;
+}
+
+.success-story {
+  background-color: #fa9f15;
+  color: #2D2C2A;
+  padding: 70px 0;
+  text-align: center;
+}
+.success-story img {
+
+  border-radius: 100%;
+  box-shadow: #2D2C2A 0px 0px 10px;
+}
+.success-text {
+  font-size: 18px;
+  margin: 10px;
+  color: #2D2C2A;
+  padding-right: 70px;
+}
+
+.success-photo1 {
+  float: left;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.success-photo2 {
+  float: right;
+  margin-left: 15px;
+  display: flex;
+}
+
+.customer-reviews h2 {
+  text-align: center;
+}
+
+.google-icon {
+  background-image: url('/iamges/googleicon.png');
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin-top: -10px;
+}
+
+.stars {
+  color: #fa9f15;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.review-date {
+  color: #fa9f15;
+  font-size: 14px;
+}
+
+.review-text {
+  margin: 10px 0;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.customer-photo {
+  border: 2px solid #fa9f15;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.customer-reviews {
+  background-color: #fa9f15;
+  color: #2D2C2A;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+
+.review-container {
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #fa9f15;
+  border-radius: 150px;
+  padding: 18px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  animation: display 20s infinite;
+  opacity: 0;
+}
+
+.review-container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.review-container:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.review-container:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.review-container:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.review-container:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.numbers-section {
+  background-color: #2D2C2A;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.numbers-column {
+  display: inline-block;
+  width: 20%;
+  margin: 0 3%;
+  vertical-align: top;
+  padding-top: 60px;
+}
+
+.numbers-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.numbers-value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.numbers-label {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #2D2C2A;
+  color: #fa9f15;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  border-top: 2px solid #fa9f15;
+}
+
+footer a {
+  color: #fa9f15;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer h3, footer p {
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+#hero-contact {
+  background-image: url('images/truckmountain.jpg');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 195px 0;
+}
+#hero-contact h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  color: white;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(189, 188, 188, 0.1);
+}
+
+#contact-us {
+  display: flex;
+}
+
+.map-section {
+  margin-left: 70px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+h2 {
+  color: #fa9f15;
+}
+
+.success-story h2,
+.customer-reviews h2 {
+  color: #2D2C2A;
+}
+
+.get-quote {
+  background-color: #fa9f15;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.get-quote a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.get-quote a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  margin: 20px;
+}
+
+.quote-form {
+  margin: 20px;
+  text-align: center;
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2D2C2A;
+}
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form select {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #fa9f15;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+#comments {
+  width: 50%;
+  padding: 10px;
+  padding-top: 20px;
+  border: 2px solid #fa9f15;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+#move-date {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #fa9f15;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.quote-form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: #fa9f15;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.quote-form input[type="submit"]:hover {
+  background-color: #2D2C2A;
+  color: #fa9f15;
+}
+
+.contact-us-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  color: #666;
+  font-size: 18px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+#services {
+  background-color: #fa9f15;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#services h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #2D2C2A;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-item {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 450px;
+}
+
+.service-item:hover {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+.service-icon {
+  font-size: 3em;
+  color: #fa9f15;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.service-description {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#pricing {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pricing h2 {
+  color: #fa9f15;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #fa9f15;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.extra-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.extra-table th {
+  background-color: #fa9f15;
+  color: #fff;
+}
+
+.extra-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#privacy-policy {
+  padding: 20px;
+}
+
+#privacy-policy h2 {
+  color: #2D2C2A;
+}
+
+#privacy-policy p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+#privacy-policy ol {
+  margin-left: 20px;
+}
+
+#privacy-policy li {
+  margin: 10px 0;
+}
+#terms-of-service {
+  padding: 20px;
+}
+
+#terms-of-service h2 {
+  color: #2D2C2A;
+}
+
+#terms-of-service p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
